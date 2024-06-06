@@ -1,6 +1,6 @@
-org: matheusteodoro01
-app: serverless-crud
-service: serverless-crud
+org: victoratividade2024
+app: atividadelambda
+service: atividadelambdacadastrousuario
 frameworkVersion: "3"
 
 plugins:
@@ -14,7 +14,7 @@ custom:
 
 provider:
   name: aws
-  runtime: nodejs14.x
+  runtime: nodejs18.x
   iam:
     role:
       statements:

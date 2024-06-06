@@ -24,11 +24,11 @@ app.get("/users/:userId", async (req, res) => {
     } else {
       return res
         .status(404)
-        .json({ error: 'Could not find user with provided "userId"' });
+        .json({ error: 'Não foi possível encontrar o usuário ID fornecido' });
     }
   } catch (error) {
     console.log(error);
-    return res.status(500).json({ error: "Could not retreive user" });
+    return res.status(500).json({ error: "Não foi possível recuperar o usuário" });
   }
 });
 
@@ -49,13 +49,13 @@ app.post("/users", async (req, res) => {
     return res.json({ userId, name, email });
   } catch (error) {
     console.log(error);
-    return res.status(500).json({ error: "Could not create user" });
+    return res.status(500).json({ error: "Não foi possível criar o usuário" });
   }
 });
 
 app.use((req, res, next) => {
   return res.status(404).json({
-    error: "Not Found",
+    error: "Não encontrado",
   });
 });
 
