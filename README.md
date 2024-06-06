@@ -1,20 +1,21 @@
-*-Documentação da API de Gerenciamento de Usuários-*
+# Documentação da API de Gerenciamento de Usuários
 
-*Visão Geral*
+## Visão Geral
 Esta API permite o gerenciamento de dados de usuários utilizando o AWS DynamoDB como backend. Suporta operações para criar um novo usuário e recuperar detalhes de usuários com base no ID do usuário.
 
-*Índice*
-Configuração
-Variáveis de Ambiente
-Endpoints
-Obter Usuário
-Criar Usuário
-Tratamento de Erros
+## Índice
+- [Configuração](#configuração)
+- [Variáveis de Ambiente](#variáveis-de-ambiente)
+- [Endpoints](#endpoints)
+  - [Obter Usuário](#obter-usuário)
+  - [Criar Usuário](#criar-usuário)
+- [Tratamento de Erros](#tratamento-de-erros)
 
-*Configuração*
+## Configuração
 Para configurar esta aplicação, você precisa ter Node.js e npm instalados. Além disso, certifique-se de ter as credenciais AWS configuradas para acessar o DynamoDB.
 
-Instalar dependências:
+**Instalar dependências:**
+```sh
 npm install
 
 Implantar a aplicação usando AWS Lambda:
